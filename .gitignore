@@ -6,7 +6,7 @@ Release/
 Compile/*.o
 Compile/DNASecuenceAlignment
 Compile/DNASecuenceGenerator
-#*#
+#*.*#
 .#*
 *.save
 *~
