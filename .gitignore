@@ -1,0 +1,12 @@
+*.dna
+.cproject
+.project
+Debug/
+Release/
+Compile/*.o
+Compile/DNASecuenceAlignment
+Compile/DNASecuenceGenerator
+#*#
+.#*
+*.save
+*~
