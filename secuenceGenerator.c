@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 
-int main() {
+int main2() {
 	int lenght;
 	int rightValue = 0;
 	while (!rightValue){

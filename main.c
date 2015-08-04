@@ -15,7 +15,7 @@
 int main(int argc, char **argv) {
 	readFile(argv[1]);
 	if (argc == 3){
-		if (exitsFile(argv[1]) && exitsFile(argv[2]) && isValidFilePath(argv[1]) && isValidFilePath(argv[2])){
+		if (existFile(argv[1]) && existFile(argv[2]) && isValidFilePath(argv[1]) && isValidFilePath(argv[2])){
 			if (isDNAFileExtension(argv[1]) && isDNAFileExtension(argv[2])){
 				if (!strcmp(argv[1],argv[2])){
 					printf("please, select different files.\n");
@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
 					char *secuenceA = readFile(argv[1]);
 					char *secuenceB = readFile(argv[2]);
 					if( secuenceA && secuenceB){
-						if (isValidContents(secuenceA) && isValidContents(secuenceB)){
+						if (isValidNucleotideContents(secuenceA) && isValidNucleotideContents(secuenceB)){
 							alignment(secuenceA,secuenceB);
 						}
 						else printf("the file(s) contents is invalid.\n");

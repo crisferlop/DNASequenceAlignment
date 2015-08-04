@@ -1,6 +1,8 @@
 #include <string.h>
 
-/*
+/**
+ * @file
+ * @brief
  * iofile.c
  *
  *  Created on: 31/7/2015
@@ -25,7 +27,7 @@ char* readFile(char* filePath);
  * @param filePath es la direccion de archivo de la cual se comprobara su existencia
  * @return se retorna 0 en el caso que el archivo no exista y 1 si este existe
  */
-short int exitsFile(char *filePath);
+short int existFile(char *filePath);
 /**
  * @brief Se encarga de se  crear un archivo en la direccion a solicitar, si el
  * archivo existe se puede sobrescribir.

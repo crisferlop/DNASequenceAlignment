@@ -31,7 +31,7 @@ char* readFile(char* filePath){
 	}
 	return 0;
 }
-short int exitsFile(char *filePath){
+short int existFile(char *filePath){
 	FILE * myFile = fopen(filePath,"r");
 	/*Esta verificacion sirve para saber si el archivo existe o se pudo
 	 * abrir debido a que el usuario puede agregarlo en algun lugar indebido

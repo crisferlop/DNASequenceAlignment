@@ -98,7 +98,7 @@ short isNucleotide(char Nucleotid){
 }
 
 
-short isValidContents(char *dna){
+short isValidNucleotideContents(char *dna){
 	int lenght = strlen(dna);
 	int current = 0;
 	if (lenght == 0)return 0;
@@ -142,6 +142,24 @@ void liberateMatrix(int ** matrix){
 	free(matrix);
 }
 
+
+/**
+ *En la matriz genera el gap por ejemplo en la siguiente matriz 3x3
+ *------------------
+ * | _ | A | G | T |
+ *------------------
+ *_| 0 |-5 |-10|-15| <- Gap inicializado
+ *------------------
+ *A|-5 | 0 | 0 | 0 |
+ *------------------
+ *G|-10| 0 | 0 | 0 |
+ *------------------
+ *T|-15| 0 | 0 | 0 |
+ *------------------
+ *   ^
+ *   |
+ *   Gap inicializado
+ */
 void initGapOnScoreMatrix(int ** matrix, int gap, int width,int height){
 	for (int column = 0; column < width; column++)matrix[0][column] = gap * column;
 	for (int row = 0; row < height; row++)matrix[row][0] = gap * row;
@@ -175,8 +193,11 @@ void alignment(char* dna1,char* dna2){
 	char *resultSecond = calloc((stringsize+1),sizeof(char));
 	resultFirst[stringsize] = '\0';
 	resultSecond[stringsize] = '\0';
-
+	/**
+	 * Genera una matriz en memoria dinamica indicando el ancho y el alto
+	 */
 	int **scoreMatrix = generateMatrix(dna1lenght, dna2lenght);
+	
 	initGapOnScoreMatrix(scoreMatrix,gap,dna1lenght,dna2lenght);
 	char tmp[] = " ";
 	for (i = 1; i < dna2lenght; i++){

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>DNASecuenceGenerator &amp;&amp; DNASecuenceAlignment: Fichero Fuente /home/cristianfernando/Documentos/git/DNASequenceAlignment/secuenceGenerator.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DNASecuenceGenerator &amp;&amp; DNASecuenceAlignment
+   &#160;<span id="projectnumber">version final</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('secuence_generator_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/home/cristianfernando/Documentos/git/DNASequenceAlignment/secuenceGenerator.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="secuence_generator_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * secuenceGenerator.c</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 1/8/2015</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: cristianfernando</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iofile_8h.html">iofile.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ioperipherals_8h.html">ioperipherals.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="secuence_alignment_8h.html">secuenceAlignment.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;strings.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="secuence_generator_8c.html#a0e663f52efbc8593793d628b4259ce9b">   15</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="secuence_generator_8c.html#a0e663f52efbc8593793d628b4259ce9b">main2</a>() {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> lenght;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> rightValue = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">while</span> (!rightValue){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        printf(<span class="stringliteral">&quot;Specify the length of the DNA sequence: &quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        rightValue = <a class="code" href="ioperipherals_8c.html#a84dbd34a738ce2f61e3b233e6b13ded0">scanInt</a>(&amp;lenght) &amp;&amp; lenght &gt;=7 &amp;&amp; lenght &lt;=1000000;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (!rightValue)<a class="code" href="ioperipherals_8c.html#adcbba9987fd6d3425b176a8a19766936">printlnString</a>(<span class="stringliteral">&quot;Error: try again.&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    rightValue = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">char</span> * filename = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">char</span>* dna = malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*(lenght+1));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span> (!rightValue){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        printf(<span class="stringliteral">&quot;Type the name of the file: &quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        filename = <a class="code" href="ioperipherals_8c.html#ab0c80ef6a68ce51b5fe952ee46bb6fe9">scanString</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="secuence_alignment_8c.html#a669b425b1a868431a57fb4bbbf4e27d1">isDNAFileExtension</a>(filename)){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">char</span> * newfilename;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="comment">// en esta linea se realizo un cambio antes existia un +4 en vez de un +5</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="comment">// se hizo el cambio debio a un error en la liberacion de memoria que antes no estaba</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="comment">// implementada</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            newfilename = malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)*(strlen(filename)+5));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            newfilename[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            strcat(newfilename,filename);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            strcat(newfilename,<span class="stringliteral">&quot;.dna&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            free (filename);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            filename = newfilename;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// se implementa la validacion de archivos o al menos una version minimalista de esto,</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// solo se pueden hacer archivos que contengan datos alfanumericos, un unico punto</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// y espacios</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="secuence_alignment_8c.html#af0ef913d4e5d6925efef029503ded166">isValidFilePath</a>(filename) &amp;&amp; <a class="code" href="iofile_8c.html#a5253be3d03a6b2f688e41423bafc74eb">createFile</a>(filename, 1)){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="secuence_alignment_8c.html#a0f9a7e820d79b4ce1ede99fba66756f6">generateDNA</a>(dna,lenght);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            dna[lenght]= <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="iofile_8c.html#a073b08112f103140b0d862caba0642e9">writeOnFile</a>(filename,dna,1))rightValue= 1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="ioperipherals_8c.html#adcbba9987fd6d3425b176a8a19766936">printlnString</a>(<span class="stringliteral">&quot;Error. Try again.&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//cambio agregado para liberar memoria</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        free(filename);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    printf(<span class="stringliteral">&quot;File %s has been generated successfully with the following content: \n\n&quot;</span>, filename);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, dna);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    free(dna);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="ttc" id="iofile_8h_html"><div class="ttname"><a href="iofile_8h.html">iofile.h</a></div></div>
+<div class="ttc" id="secuence_alignment_8c_html_af0ef913d4e5d6925efef029503ded166"><div class="ttname"><a href="secuence_alignment_8c.html#af0ef913d4e5d6925efef029503ded166">isValidFilePath</a></div><div class="ttdeci">short isValidFilePath(char *filepath)</div><div class="ttdoc">Verifica si una direccion de archivo es valida, es un algoritmo minimalista por lo que realmente veri...</div><div class="ttdef"><b>Definition:</b> <a href="secuence_alignment_8c_source.html#l00270">secuenceAlignment.c:270</a></div></div>
+<div class="ttc" id="iofile_8c_html_a073b08112f103140b0d862caba0642e9"><div class="ttname"><a href="iofile_8c.html#a073b08112f103140b0d862caba0642e9">writeOnFile</a></div><div class="ttdeci">short int writeOnFile(char *filePath, char *contents, short int overwrite)</div><div class="ttdoc">Funcion encargada de escribir sobre un archivo. </div><div class="ttdef"><b>Definition:</b> <a href="iofile_8c_source.html#l00064">iofile.c:64</a></div></div>
+<div class="ttc" id="secuence_alignment_8c_html_a669b425b1a868431a57fb4bbbf4e27d1"><div class="ttname"><a href="secuence_alignment_8c.html#a669b425b1a868431a57fb4bbbf4e27d1">isDNAFileExtension</a></div><div class="ttdeci">int isDNAFileExtension(char *filePath)</div><div class="ttdoc">verifica si un archivo tiene extesion &quot;.dna&quot;. Para que se considere una extesion valida la direccion ...</div><div class="ttdef"><b>Definition:</b> <a href="secuence_alignment_8c_source.html#l00084">secuenceAlignment.c:84</a></div></div>
+<div class="ttc" id="ioperipherals_8h_html"><div class="ttname"><a href="ioperipherals_8h.html">ioperipherals.h</a></div></div>
+<div class="ttc" id="secuence_generator_8c_html_a0e663f52efbc8593793d628b4259ce9b"><div class="ttname"><a href="secuence_generator_8c.html#a0e663f52efbc8593793d628b4259ce9b">main2</a></div><div class="ttdeci">int main2()</div><div class="ttdef"><b>Definition:</b> <a href="secuence_generator_8c_source.html#l00015">secuenceGenerator.c:15</a></div></div>
+<div class="ttc" id="ioperipherals_8c_html_adcbba9987fd6d3425b176a8a19766936"><div class="ttname"><a href="ioperipherals_8c.html#adcbba9987fd6d3425b176a8a19766936">printlnString</a></div><div class="ttdeci">void printlnString(char *data)</div><div class="ttdoc">Imprime una cadena de caracteres en pantalla. </div><div class="ttdef"><b>Definition:</b> <a href="ioperipherals_8c_source.html#l00016">ioperipherals.c:16</a></div></div>
+<div class="ttc" id="ioperipherals_8c_html_a84dbd34a738ce2f61e3b233e6b13ded0"><div class="ttname"><a href="ioperipherals_8c.html#a84dbd34a738ce2f61e3b233e6b13ded0">scanInt</a></div><div class="ttdeci">short scanInt(int *data)</div><div class="ttdoc">obtiene un entero del teclado. </div><div class="ttdef"><b>Definition:</b> <a href="ioperipherals_8c_source.html#l00032">ioperipherals.c:32</a></div></div>
+<div class="ttc" id="secuence_alignment_8h_html"><div class="ttname"><a href="secuence_alignment_8h.html">secuenceAlignment.h</a></div></div>
+<div class="ttc" id="ioperipherals_8c_html_ab0c80ef6a68ce51b5fe952ee46bb6fe9"><div class="ttname"><a href="ioperipherals_8c.html#ab0c80ef6a68ce51b5fe952ee46bb6fe9">scanString</a></div><div class="ttdeci">char * scanString()</div><div class="ttdoc">obtiene una cadena de caracteres del teclado. </div><div class="ttdef"><b>Definition:</b> <a href="ioperipherals_8c_source.html#l00069">ioperipherals.c:69</a></div></div>
+<div class="ttc" id="secuence_alignment_8c_html_a0f9a7e820d79b4ce1ede99fba66756f6"><div class="ttname"><a href="secuence_alignment_8c.html#a0f9a7e820d79b4ce1ede99fba66756f6">generateDNA</a></div><div class="ttdeci">void generateDNA(char *dna, int lenght)</div><div class="ttdoc">genera una cadena de caracteres aleatoriamente con un largo deseado, el largo tiene que se ser el lar...</div><div class="ttdef"><b>Definition:</b> <a href="secuence_alignment_8c_source.html#l00075">secuenceAlignment.c:75</a></div></div>
+<div class="ttc" id="iofile_8c_html_a5253be3d03a6b2f688e41423bafc74eb"><div class="ttname"><a href="iofile_8c.html#a5253be3d03a6b2f688e41423bafc74eb">createFile</a></div><div class="ttdeci">short int createFile(char *filePath, short int overwrite)</div><div class="ttdoc">Se encarga de se crear un archivo en la direccion a solicitar, si el archivo existe se puede sobrescr...</div><div class="ttdef"><b>Definition:</b> <a href="iofile_8c_source.html#l00046">iofile.c:46</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="secuence_generator_8c.html">secuenceGenerator.c</a></li>
+    <li class="footer">Generado el Lunes, 3 de Agosto de 2015 19:00:43 para DNASecuenceGenerator &amp;&amp; DNASecuenceAlignment por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

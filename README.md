@@ -1,2 +1,2 @@
-# DNASequenceAlignment
-Programa basado en el el algoritmo de Needleman - Wunsch
+# DNASequenceAlignment &% DNASequenceGenerator
+Este es un programa basado en el algoritmo de Needleman - Wunsch, en realidad son dos programas el primero se llama DNASecuenceGenerator, el programa consiste en generar un archivo con extension ".dna" con una cadena de ADN, en este programa se pide el tamaño de la cadena y tambien el nombre del archivo donde se va a guardar, con el fin de usarlo en el otro programa DNASecuenceAlignment el cual toma dos archivos con extension ".dna" con el fin de alinear las dos cadenas de ADN y comprobar la similitud de estas cadenas de caracteres.
